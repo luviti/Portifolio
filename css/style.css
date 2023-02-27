@@ -363,59 +363,45 @@ section.home{
 	width: none;
 }
 
-.contato{
+section.contact{
 	width: 100%;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-}
-
-.cards{
-	width: 400px;
-	height: 246px;
-	border-top: 4px solid #549ef2;
-	border-radius: 0.3em;
-	display: inline-block;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-
-.contato h1{
 	text-align: center;
+}
+
+section.contact .contato{
+	width: 33.3%;
+	display: inline-block;
+	margin-top: 60px;
+	padding-left: 85px;
+}
+
+section.contact h1{
+	font-size: 40px;
+}
+
+section.contact .barra-1:hover{
+	width: 12.5em;
+}
+
+section.contact .contato{
+	text-align: left;
+}
+
+section.contact .contato i{
 	font-size: 60px;
-	font-family: "Lato";
-	margin-bottom:110px;
+	display: inline-block;
 }
 
-.cards h2{
-	padding-top: 40px;
-	padding-left: 30px;
-	padding-bottom: 20px;
-}
-
-.cards p{
-	margin-left: 30px;
-}
-
-.cards #email,
-.cards #tel{
-	float: right;
-	font-size: 55px;
-	margin-right: 23%;
-	margin-top: 6%;
-}
-
-.cards #email{
-	font-size: 70px;
+section.contact .contato p{
+	display: inline-block;
+	padding-left: 15px;
+	padding-top: 15px;
+	font-size: 22px;
+	position: absolute;
 }
 
 footer{
 	width: 100%;
-	height: 200px;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	flex-direction: column;
   	border-top: 1px solid #3B2F2F;
   	margin-top: 70px;
   	color: #fff;
@@ -432,8 +418,9 @@ footer img{
 
 footer .social-icons{
 	display: block;
+	margin-top: 40px;
 	margin-bottom: 29px;
-	margin-left: -50px;
+	margin-left: -15px;
 }
 
 footer a{
@@ -444,13 +431,25 @@ footer a{
 }
 
 footer p{
-	padding-left: 3.4%;
+	padding-left: 2%;
 	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+@media screen and (max-width: 1300px){
+	.social-media{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1080px){
 	.social-media{
 		display: none;
+	}
+
+	section.contact .contato{
+		display: block;
+		padding-left: 30px;
 	}
 }
 
@@ -493,17 +492,17 @@ footer p{
 
 	.projeto1 img{
 		width: 100%;
-		margin-left: 6.7%;
+		margin-left: 4.5%;
 	}
 
 	.projeto1 h1{
 		text-align: center;
 		font-size: 40px;
-		margin-left: 93px;
+		margin-left: 55px;
 	}
 
 	.info-projeto{
-		margin-left: 95px;
+		margin-left: 60px;
 		margin-bottom: 30px;
 		text-align: center;
 	}
@@ -511,14 +510,35 @@ footer p{
 	.info-projeto input[type=submit]{
 		width: 180px;
 		height: 68px;
-		margin: 30px auto;
-	}
-
-	.cards{
-		margin-left: 4px;
+		margin: 30px 36.5%;
 	}
 
 	.cards:nth-of-type(2){
 		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.projeto1 img{
+		width: 100%;
+		margin-left: 4.5%;
+	}
+
+	.projeto1 h1{
+		text-align: center;
+		font-size: 40px;
+		margin-left: 55px;
+	}
+
+	.info-projeto{
+		margin-left: 60px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.info-projeto input[type=submit]{
+		width: 180px;
+		height: 68px;
+		margin: 30px 21%;
 	}
 }
