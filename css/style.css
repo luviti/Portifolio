@@ -372,7 +372,6 @@ section.contact .contato{
 	width: 33.3%;
 	display: inline-block;
 	margin-top: 60px;
-	padding-left: 85px;
 }
 
 section.contact h1{
@@ -384,7 +383,7 @@ section.contact .barra-1:hover{
 }
 
 section.contact .contato{
-	text-align: left;
+	text-align: center;
 }
 
 section.contact .contato i{
