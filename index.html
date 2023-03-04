@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link rel="icon" type="image/png" href="img/img1.ico"/>
 	<script src="https://kit.fontawesome.com/42e6961562.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Portifólio</title>
 </head>
 <body>
@@ -55,13 +56,13 @@
 
 	<section id="sobre" class="sobre">
 		<div class="container">
-		<h1>About-Me</h1>
+		<h1 data-aos="fade-in">About-Me</h1>
 		<div class="barra-1"></div>
-		<p>My skills and a little bit of me will all be here.</p>
+		<p data-aos="fade-in">My skills and a little bit of me will all be here.</p>
 
 		<div class="sobre-content">
-			<h2>A bit of me</h2>
-				<span>
+			<h2 data-aos="fade-right">A bit of me</h2>
+				<span data-aos="fade-right">
 				<br/><br/>
 				Hello, I'm a Front-End website programmer, I create well-made and responsive websites. My first Hello Word was in since 2021 & learning more and more!
 				<br/><br/>
@@ -71,33 +72,33 @@
 			</span>
 
 			<div>
-			<a href="#contato"><input type="submit" name="submit" value="Contact"></a>
-			<a download="img/github.png"> <input type="submit" name="submit" value="Curriculum" style="margin-left: 20px;">
+			<a data-aos="fade-up" href="#contato"><input type="submit" name="submit" value="Contact"></a>
+			<a data-aos="fade-up" download="img/github.png"> <input type="submit" name="submit" value="Curriculum" style="margin-left: 20px;">
 			</div>
 
 		</div><!--sobre-content-->
 
 		<div class="habilidades w50">
-			<h2>knowledge in:</h2>
-			<div class="minhas-habilidades">HTML</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">CSS</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">JAVASCRIPT</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">JQUERY</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">BOOTSTRAP</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">MATERIALIZE</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">ANGULAR</div><!--minhas-habilidades-->
-			<div class="minhas-habilidades">REACTJS</div><!--minhas-habilidades-->
+			<h2 data-aos="fade-up">knowledge in:</h2>
+			<div data-aos="fade-left" class="minhas-habilidades">HTML</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">CSS</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">JAVASCRIPT</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">JQUERY</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">BOOTSTRAP</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">MATERIALIZE</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">ANGULAR</div><!--minhas-habilidades-->
+			<div data-aos="fade-left" class="minhas-habilidades">REACTJS</div><!--minhas-habilidades-->
 		</div><!--skill-->
 	</div><!--container-->
 	</section><!--sobre-->
 
 	<section id="projetos" class="projetos">
 		<div class="container">
-		<h1>My Projects</h1>
+		<h1 data-aos="fade-in">My Projects</h1>
 		<div class="barra-1"></div>
-		<p>Some among many of my projects already Done!</p>
+		<p data-aos="fade-in">Some among many of my projects already Done!</p>
 
-		<ul class="projeto1">
+		<ul class="projeto1" data-aos="fade-in">
 		
 			<li>
 				<img src="img/laptop1.png">
@@ -130,12 +131,10 @@
 	</section>
 
 	<section id="contato" class="contact">
-		<h1>Contact</h1>
+		<h1 data-aos="fade-in">Contact</h1>
 		<div class="barra-1"></div>
 		<div class="contato">
-			<center>
-				<i class="fa-solid fa-envelope"></i><p>luviticontact@gmail.com</p>
-			</center>
+			<i data-aos="fade-up" class="fa-solid fa-envelope"></i><p data-aos="fade-up">felipevluiz67@gmail.com</p>
 		</div>
 	</section><!--contact-->
 
@@ -145,35 +144,26 @@
 	<footer>
 		<center>
 		<div class="social-icons">
-		<a href="https://github.com/luviti" target="_blank"><img src="img/github2.png"></a>
-		<a href="https://google.com" target="_blank"><img src="img/youtube.jpg"></a>
-		<a href="https://instagram.com/luizviana._" target="_blank"><img src="img/instagram.png"></a>
+		<a data-aos="fade-in" href="https://github.com/luviti" target="_blank"><img src="img/github2.png"></a>
+		<a data-aos="fade-in" href="https://google.com" target="_blank"><img src="img/youtube.jpg"></a>
+		<a data-aos="fade-in" href="https://instagram.com/luizviana._" target="_blank"><img src="img/instagram.png"></a>
 	</div><!--img-->
 		<ul>
-			<a href="#home">Home</a>
-			<a href="#sobre">About</a>
-			<a href="#projetos">Projects</a>
-			<a href="#contato">Contact</a>
+			<a data-aos="fade-in" href="#home">Home</a>
+			<a data-aos="fade-in" href="#sobre">About</a>
+			<a data-aos="fade-in" href="#projetos">Projects</a>
+			<a data-aos="fade-in" href="#contato">Contact</a>
 		</ul>
-		<p>Made By Luiz Felipe. Copyright until 2023. ©</p>
+		<p data-aos="fade-in">Made By Luiz Felipe. Copyright until 2023. ©</p>
 	</center>
 	</footer>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/function.js"></script>
-		
-		
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZGHXBYHX5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GZGHXBYHX5');
-</script>
-		
-		
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+	    AOS.init();
+	  </script>
 </body>
 </html>
